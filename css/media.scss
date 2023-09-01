@@ -1,0 +1,279 @@
+$color-white: #ffffff;
+
+// xl
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+  .testimonial {
+    .testimonial-inner {
+      .testimonial-content {
+        .testimonial-items {
+          padding: 80px 30px;
+        }
+      }
+    }
+  }
+  .price {
+    .price-content {
+      margin: 0 0 0 0px;
+    }
+  }
+}
+
+// lg
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .banner {
+    .banner-img {
+      margin: 137px 0 0 33px;
+    }
+  }
+  .choose-us {
+    .choose-us-content {
+      padding: 0;
+    }
+    .choose-us-img {
+      margin: 50px 0 0 90px;
+    }
+  }
+  .testimonial {
+    .testimonial-inner {
+      .testimonial-content {
+        .testimonial-items {
+          padding: 40px 10px;
+        }
+      }
+    }
+  }
+}
+
+// md
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .w-md-1 {
+    width: 100%;
+  }
+  .w-md-2 {
+    width: 50%;
+  }
+  .w-md-3 {
+    width: 33.33%;
+  }
+  .order-md-1 {
+    order: 1;
+  }
+  .justify-md-between {
+    justify-content: space-between;
+  }
+  .service .service-title h2,
+  .work .work-content h2,
+  .choose-us .choose-us-content h2,
+  .studies .studies-title h2,
+  .valution .valution-title h2,
+  .price .price-title h2,
+  .touch .touch-content h2,
+  .community .community-title h2 {
+    font-size: 32px;
+  }
+  header {
+    padding: 20px 0;
+    .toggle-manu {
+      display: block;
+    }
+    .search-btn i {
+      margin-left: 10px;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: -150%;
+      bottom: 0;
+      background-color: #262b32;
+      transition: 0.8s all;
+      ul {
+        flex-direction: column;
+        li {
+          a {
+            width: 250px;
+            border-bottom: 1px solid #60697b;
+            padding: 15px 0;
+            color: #ffffff;
+          }
+        }
+      }
+      .icon-nav {
+        display: block;
+      }
+      .logo-close {
+        display: inline-block;
+      }
+      .close-manu {
+        display: block;
+      }
+    }
+    .nav-left {
+      left: 0;
+    }
+  }
+  .header-active {
+    nav {
+      ul {
+        li {
+          a {
+            color: $color-white;
+            i{
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .banner {
+    .banner-content {
+      padding: 120px 0 0 0;
+    }
+    .banner-img {
+      margin: 30px 0 0 0;
+    }
+  }
+  .service {
+    .service-inner {
+      .service-items {
+        margin: 15px;
+      }
+    }
+  }
+  .choose-us {
+    .choose-us-content {
+      margin-bottom: 40px;
+    }
+  }
+  .work {
+    .work-content {
+      padding: 0;
+      margin: 0px 0 60px 0;
+    }
+  }
+  .price {
+    .price-content {
+      margin: 0;
+    }
+  }
+  .touch {
+    .touch-content {
+      margin: 85px 0 0 0;
+    }
+  }
+  .price-title {
+    margin: 0 0 40px 0;
+  }
+  .choose-us {
+    .choose-us-img {
+      margin: 0;
+    }
+  }
+  .testimonial {
+    .testimonial-inner {
+      .testimonial-img img {
+        &:nth-child(2) {
+          border-radius: 15px 15px 0 0px;
+        }
+      }
+      .testimonial-content {
+        .testimonial-items {
+          border-radius: 0 0px 15px 15px;
+          padding: 120px 20px;
+        }
+      }
+    }
+  }
+
+  footer {
+    .w-4 {
+      &:last-child {
+        .footer-items {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .touch .touch-img img:nth-child(1),
+  .choose-us .choose-us-img img:nth-child(1),
+  .work .work-img img:nth-child(1),
+  .screenshot-2,
+  .screenshot-3,
+  .screenshot-4 {
+    display: none;
+  }
+}
+
+// sm
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .w-sm-1 {
+    width: 100%;
+  }
+  .header-btn {
+    display: none;
+  }
+  .valution-items {
+    margin: 25px 0;
+  }
+
+  .banner {
+    .banner-content h1 {
+      font-size: 45px;
+    }
+  }
+  .service {
+    .service-inner {
+      .service-items {
+        margin: 15px 0;
+      }
+    }
+  }
+  .price {
+    .price-content {
+      .price-card {
+        margin: 15px 0;
+      }
+    }
+  }
+  .footer-items {
+    margin: 30px 0 0px 0;
+  }
+}
+// xs
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
+  .touch .touch-img::before,
+  .choose-us .choose-us-img::before,
+  .work .work-img::before {
+    display: none;
+  }
+  .service .service-title h2,
+  .work .work-content h2,
+  .choose-us .choose-us-content h2,
+  .studies .studies-title h2,
+  .valution .valution-title h2,
+  .price .price-title h2,
+  .touch .touch-content h2,
+  .community .community-title h2 {
+    font-size: 29px;
+  }
+  .banner {
+    .banner-content h1 {
+      font-size: 33px;
+    }
+  }
+}
